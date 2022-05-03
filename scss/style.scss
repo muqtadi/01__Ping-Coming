@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Libre Franklin';
+  src: url('LibreFranklin-Bold.woff2') format('woff2'),
+    url('LibreFranklin-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Libre Franklin';
+  src: url('LibreFranklin-SemiBold.woff2') format('woff2'),
+    url('LibreFranklin-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Libre Franklin';
+  src: url('LibreFranklin-Light.woff2') format('woff2'),
+    url('LibreFranklin-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+body{
+  font-family: 'Libre Franklin', sans-serif;
+}
