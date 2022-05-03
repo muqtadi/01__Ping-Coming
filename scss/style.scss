@@ -1,8 +1,4 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+// FONTS CONNECT SECTION
 @font-face {
   font-family: 'Libre Franklin';
   src: url('LibreFranklin-Bold.woff2') format('woff2'),
@@ -10,6 +6,7 @@
   font-weight: 700;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Libre Franklin';
   src: url('LibreFranklin-SemiBold.woff2') format('woff2'),
@@ -17,6 +14,7 @@
   font-weight: 600;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Libre Franklin';
   src: url('LibreFranklin-Light.woff2') format('woff2'),
@@ -24,6 +22,29 @@
   font-weight: 300;
   font-style: normal;
 }
+
+// SCSS SECTION CONNECT
+@import './header';
+
+
+
+// CSS CONNECT SECTION
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
   font-family: 'Libre Franklin', sans-serif;
+}
+.wrapper{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.container{
+  max-width: 650px;
+  padding: 130px 50px 50px;
+  text-align: center;
+  margin: 0 auto;
 }

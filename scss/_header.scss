@@ -1,0 +1,41 @@
+header{
+  .head-title{
+    color: rgb(25, 33, 44);
+    text-transform: uppercase;
+    font-size: 28px;
+    &::after{
+      content: '.';
+      color: rgb(68, 123, 252);
+    }
+  }
+  .head-title-second{
+    font-size: 25px;
+    color: rgb(18, 30, 42);
+    margin: 40px 0 25px 0;
+    span{
+      color: rgb(149, 149, 149);
+      font-weight: 300;
+    }
+  }
+  .head-paragraph{
+    color:rgb(18, 30, 42);
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+
+// MIN - WIDTH 1024
+@media(min-width: 1024px){
+  header{
+    .container{
+      padding: 40px 50px 50px;
+      .head-title{
+        font-size: 20px;
+      }
+      .head-title-second{
+        font-size: 30px;
+        margin: 25px 0 15px 0;
+      }
+    }
+  }
+}
