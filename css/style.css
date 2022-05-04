@@ -101,6 +101,9 @@ address .address-btn {
   color: #fff;
   font-weight: 600;
   letter-spacing: 1px;
+  cursor: pointer;
+  -webkit-box-shadow: 2px 8px 10px rgba(172, 193, 247, 0.8);
+          box-shadow: 2px 8px 10px rgba(172, 193, 247, 0.8);
 }
 
 @media (min-width: 1024px) {
