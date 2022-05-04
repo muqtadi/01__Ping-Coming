@@ -19,6 +19,10 @@
   font-style: normal;
 }
 
+header {
+  height: 120px;
+}
+
 header .head-title {
   color: #19212c;
   text-transform: uppercase;
@@ -48,15 +52,64 @@ header .head-paragraph {
 }
 
 @media (min-width: 1024px) {
-  header .container {
-    padding: 40px 50px 50px;
-  }
-  header .container .head-title {
+  header .head-title {
     font-size: 20px;
   }
-  header .container .head-title-second {
+  header .head-title-second {
     font-size: 30px;
     margin: 25px 0 15px 0;
+  }
+}
+
+address {
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 15px;
+  -ms-grid-rows: (35px)[2];
+      grid-template-rows: repeat(2, 35px);
+}
+
+address .address-item {
+  border-radius: 50px;
+  border: none;
+}
+
+address .input {
+  border: 1px solid #c7d4f4;
+  outline: none;
+  padding-left: 25px;
+}
+
+address .input::-webkit-input-placeholder {
+  color: #c7d4f4;
+}
+
+address .input:-ms-input-placeholder {
+  color: #c7d4f4;
+}
+
+address .input::-ms-input-placeholder {
+  color: #c7d4f4;
+}
+
+address .input::placeholder {
+  color: #c7d4f4;
+}
+
+address .address-btn {
+  background-color: #4d7bf3;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 1024px) {
+  address {
+    -ms-grid-columns: auto 200px;
+        grid-template-columns: auto 200px;
+    grid-column-gap: 15px;
+    -ms-grid-rows: 40px;
+        grid-template-rows: 40px;
   }
 }
 
@@ -77,9 +130,22 @@ body {
 }
 
 .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 180px auto;
+      grid-template-rows: 180px auto;
   max-width: 650px;
-  padding: 80px 50px 50px;
+  min-height: 100vh;
+  padding: 80px 20px 20px;
   text-align: center;
   margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    -ms-grid-rows: 160px auto;
+        grid-template-rows: 160px auto;
+    padding: 60px 10px 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

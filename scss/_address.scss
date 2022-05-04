@@ -1,0 +1,30 @@
+address{
+  display: grid;
+  grid-row-gap: 15px;
+  grid-template-rows: repeat(2, 35px);
+  .address-item{
+    border-radius: 50px;
+    border: none;
+  }
+  .input{
+    border: 1px solid rgb(199, 212, 244);
+    outline: none;
+    padding-left: 25px;
+    &::placeholder{color: rgb(199, 212, 244);}
+  }
+  .address-btn{
+    background-color: rgb(77, 123, 243);
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+  }
+}
+
+@media(min-width: 1024px){
+  address{
+    grid-template-columns: auto 200px;
+    grid-column-gap: 15px;
+    grid-template-rows: 40px;
+  }
+}
