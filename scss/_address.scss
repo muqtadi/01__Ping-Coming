@@ -1,7 +1,7 @@
 address{
   display: grid;
   grid-row-gap: 15px;
-  grid-template-rows: repeat(2, 35px);
+  grid-template-rows: repeat(3, 35px);
   .address-item{
     border-radius: 50px;
     border: none;
@@ -12,6 +12,7 @@ address{
     padding-left: 25px;
     &::placeholder{color: rgb(199, 212, 244);}
   }
+  .input-invalid-border{border: 1px solid rgb(229,98,114);}
   .address-btn{
     background-color: rgb(77, 123, 243);
     color: #fff;
@@ -20,13 +21,20 @@ address{
     cursor: pointer;
     box-shadow: 2px 8px 10px rgba(172, 193, 247, 0.8);
   }
-  .invalidParagraph{display: none; color: red;}
+  .invalidParagraph{
+    display: none;
+    color: rgb(229, 98, 114);
+  }
 }
 
 @media(min-width: 1024px){
   address{
     grid-template-columns: auto 200px;
     grid-column-gap: 15px;
-    grid-template-rows: 40px;
+    grid-template-rows: 40px 40px;
+    .invalidParagraph{
+      justify-self: left;
+      padding-left: 20px;
+    }
   }
 }

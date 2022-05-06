@@ -1,20 +1,20 @@
 const input = document.querySelector('.input');
 const addressBtn = document.querySelector('.address-btn');
-const invalidParagraph = document.querySelector('.invalid-email');
+const invalidParagraph = document.querySelector('.invalidParagraph');
 const mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 
 
 
-
-// function myEmail(){
-//   addressBtn.addEventListener('click', () =>{
-//     if(input.value.match(mailFormat)){
-//       console.log(true);
-//     }
-//     else{
-//       invalidParagraph.getElementsByClassName.display = 'block';
-//     }
-//   })
-// }
-// myEmail();
+addressBtn.addEventListener('click', () =>{
+  if(input.value.match(mailFormat)){
+    input.value = '';
+    input.classList.remove('input-invalid-border');
+    invalidParagraph.style.display = 'none';
+  }
+  else{
+    invalidParagraph.style.display = 'block';
+    input.classList.add('input-invalid-border');
+    input.value = '';
+  }
+})

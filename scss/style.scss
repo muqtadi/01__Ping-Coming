@@ -1,24 +1,24 @@
 // FONTS CONNECT SECTION
 @font-face {
   font-family: 'Libre Franklin';
-  src: url('LibreFranklin-Bold.woff2') format('woff2'),
-    url('LibreFranklin-Bold.woff') format('woff');
+  src: url('../fonts/LibreFranklin-Bold.woff2') format('woff2'),
+    url('../fonts/LibreFranklin-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Libre Franklin';
-  src: url('LibreFranklin-SemiBold.woff2') format('woff2'),
-    url('LibreFranklin-SemiBold.woff') format('woff');
+  src: url('../fonts/LibreFranklin-SemiBold.woff2') format('woff2'),
+    url('../fonts/LibreFranklin-SemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Libre Franklin';
-  src: url('LibreFranklin-Light.woff2') format('woff2'),
-    url('LibreFranklin-Light.woff') format('woff');
+  src: url('../fonts/LibreFranklin-Light.woff2') format('woff2'),
+    url('../fonts/LibreFranklin-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
