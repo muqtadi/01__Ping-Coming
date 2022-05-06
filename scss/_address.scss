@@ -2,6 +2,7 @@ address{
   display: grid;
   grid-row-gap: 15px;
   grid-template-rows: repeat(3, 35px);
+  margin-bottom: 20px;
   .address-item{
     border-radius: 50px;
     border: none;

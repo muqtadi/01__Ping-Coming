@@ -67,6 +67,7 @@ address {
   grid-row-gap: 15px;
   -ms-grid-rows: (35px)[3];
       grid-template-rows: repeat(3, 35px);
+  margin-bottom: 20px;
 }
 
 address .address-item {
@@ -130,6 +131,15 @@ address .invalidParagraph {
   }
 }
 
+main {
+  max-width: 650px;
+}
+
+main img {
+  width: 100%;
+  height: auto;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -160,8 +170,8 @@ body {
 
 @media (min-width: 1024px) {
   .container {
-    -ms-grid-rows: 160px auto;
-        grid-template-rows: 160px auto;
+    -ms-grid-rows: 160px auto auto;
+        grid-template-rows: 160px auto auto;
     padding: 60px 10px 10px;
   }
 }

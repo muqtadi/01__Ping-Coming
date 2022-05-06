@@ -5,7 +5,6 @@ const mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 
 
-
 addressBtn.addEventListener('click', () =>{
   if(input.value.match(mailFormat)){
     input.value = '';

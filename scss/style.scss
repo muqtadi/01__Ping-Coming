@@ -26,6 +26,7 @@
 // SCSS SECTION CONNECT
 @import './header';
 @import './address';
+@import './main';
 
 
 
@@ -54,7 +55,7 @@ body{
 }
 @media(min-width: 1024px){
   .container{
-    grid-template-rows: 160px auto;
+    grid-template-rows: 160px auto auto;
     padding: 60px 10px 10px;
   }
 }
