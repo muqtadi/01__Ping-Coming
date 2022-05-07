@@ -11,7 +11,7 @@ addressBtn.addEventListener('click', () =>{
     input.classList.remove('input-invalid-border');
     invalidParagraph.style.display = 'none';
   }
-  else{
+  else if(!input.value.match(mailFormat)){
     invalidParagraph.style.display = 'block';
     input.classList.add('input-invalid-border');
     input.value = '';

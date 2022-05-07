@@ -140,6 +140,57 @@ main img {
   height: auto;
 }
 
+footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: 40px 25px;
+      grid-template-rows: 40px 25px;
+  grid-row-gap: 40px;
+  margin-top: 120px;
+}
+
+footer .wrapp-icons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (40px)[3];
+      grid-template-columns: repeat(3, 40px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-column-gap: 20px;
+}
+
+footer .wrapp-icons .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid #c7d4f4;
+}
+
+footer .wrapp-icons .icon:hover {
+  background-color: #4f7bf8;
+}
+
+footer .wrapp-icons .icon svg {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
+
+footer .wrapp-icons svg, footer .wrapp-icons path .icon-item {
+  fill: #4f7bf8;
+}
+
+footer .wrapp-icons svg:hover, footer .wrapp-icons path .icon-item:hover {
+  fill: #fff;
+}
+
+footer .copyright {
+  color: #b4b4b4;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -159,8 +210,8 @@ body {
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 180px auto;
-      grid-template-rows: 180px auto;
+  -ms-grid-rows: 180px auto auto auto;
+      grid-template-rows: 180px auto auto auto;
   max-width: 650px;
   min-height: 100vh;
   padding: 80px 20px 20px;
